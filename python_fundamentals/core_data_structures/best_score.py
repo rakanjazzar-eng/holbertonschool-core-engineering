@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
-def update_dictionary(a_dictionary, key, value):
-    a_dictionary[key] = value
-    return a_dictionary
+def best_score(a_dictionary):
+    if not a_dictionary:
+        return None
+    return max(a_dictionary, key=a_dictionary.get)
